@@ -1,12 +1,18 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import Hero from './components/hero'
-
-const inter = Inter({ subsets: ['latin'] })
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import Hero from "./components/hero";
+import Slider from "./components/Slider";
+import { SliderData } from "./components/Sliderdata";
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div><Hero heading="Capture Photo" message="i capture moments in the nature and keep them alive"/> </div>
-   
-  )
+    <div>
+      <Hero
+        heading="Capture Photo"
+        message="i capture moments in the nature and keep them alive"
+      />
+      <Slider slider={SliderData}/>
+    </div>
+  );
 }
