@@ -11,7 +11,7 @@ export default function Home() {
     <div>
       <Hero
         heading="Capture Photo"
-        message="i capture moments in the nature and keep them alive"
+        message="I capture moments in the nature and keep them alive"
       />
       <Slider slider={SliderData}/>
       <Instagram/>
