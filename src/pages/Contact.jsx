@@ -1,12 +1,12 @@
 import Hero from "./components/hero";
-import Contact from './components/Contact'
-const contact = () => {
-  return (
-    <div id="contact">
+import Contactform from "./components/Contact";
+const Contact=()=>{
+    return(
+        <div>
         <Hero heading='Contact' message='Submit the form below for more work and quotes.' />
-        <Contact />
+        <Contactform/>
     </div>
-  )
+    )
 }
 
-export default contact;
+export default Contact;
